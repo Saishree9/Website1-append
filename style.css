@@ -1,0 +1,1073 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body, html{
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    scroll-behavior: smooth;
+}
+
+.hero-img{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 750px;
+    position: relative;
+    /* border: 1px solid pink; */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.566),rgba(0, 0, 0, 0.566)),url(./hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-size: cover;
+    /* position: relative;
+    bottom: 10px; */
+}
+
+/* -------------nav-bar starts--------------------------- */
+.logo{
+    margin-left: 2%;
+    color: black;
+}
+
+.nav-bar{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow:1px 0px 15px .5px  #727272;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    position: sticky;
+    top: 0;
+    z-index: 999999999;
+}
+
+
+.nav-bar ul li{
+    font-weight: bold;
+    display: inline;
+    margin-left: 40px;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: rgb(93, 91, 91);
+    font-weight: 400;
+    transition: color .3s;
+}
+
+.nav-bar ul li a:hover{
+    color: #ef7a7a;
+}
+
+.nav-button{
+    /* border: 1px solid pink; */
+    background-color: #e84545;
+    margin-right: 2%;
+    border-radius: 5px;
+    padding: 10px 30px;
+}
+
+.nav-button a{
+    color: white;
+    text-decoration: none;
+}
+
+/* -------------nav-bar ends--------------------------- */
+
+
+.head-text{
+    /* border: 2px solid blue; */
+    color: white;
+    width: 40%;
+    height: 30%;
+    position: absolute;
+    top: 50%;
+    left: 6%;
+}
+
+.head-text h1{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.head-text p{
+    margin: 20px 0px;
+    font-size: 20px;
+    /* letter-spacing: 1px; */
+
+}
+
+.email-sec{
+    /* border: 2px solid pink; */
+    width: 83%;
+    height: 27%;
+    background-color: white;
+    border-radius: 7px;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.email-sec input{
+    width: 80%;
+    height: 95%;
+    border: none;
+}
+
+.email-sec a{
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    background-color: #e84545;
+    color: white;
+    text-decoration: none;
+    width: 20%;
+    height: 95%;
+    padding-top: 7px;
+    text-align: center;
+}
+
+/* --------------------logo-pics starts------------------- */
+
+.logo-pic{
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo-pic .logo-imgs{
+    /* border: 2px solid red; */
+    width: 16%;
+    height: 100%;
+    text-align: center;
+}
+
+.logo-pic .logo-imgs img{
+    width: 40%;
+    padding-top: 20%;
+    filter: grayscale(100%);
+    transition: filter .3s;
+}
+
+.logo-pic .logo-imgs img:hover{
+    filter: grayscale(0%);
+}
+
+/* --------------------logo-pics ends------------------- */
+
+
+/* -------------------about-sec start---------------- */
+
+/* ?-------------------about-sec text start---------------- */
+
+
+.about-sec{
+    /* border: 2px solid red; */
+    background-color: rgb(225, 223, 223);
+    width: 100%;
+    height: 800px;
+    display: flex;
+}
+
+.about-sec .about-text{
+    /* border: 3px solid green; */
+    width: 35%;
+    height: 40%;
+    margin: 20% 0% 0% 6%;
+}
+
+.about-sec .about-text h5{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 10px 20px;
+    background: #e845450D;
+    color: #e84545;
+    border-radius: 5px;
+}
+
+.about-sec .about-text h1{
+    margin: 3px 0px;
+    font-weight: 700;
+    color: #32353A;
+}
+
+.about-sec .about-text p{
+    color: #212529;
+}
+
+.button{
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    /* border: 2px solid #e84545; */
+    border-radius: 5px;
+    background-color: #e84545;
+    padding: 8px 25px;
+    color: white;
+    transition: all .3s;
+    
+}
+
+.button:hover{
+    background-color: #e84545bc;
+}
+
+.button i{
+    transition: transform .3s;
+}
+
+.button:hover i{
+    transform: translatex(8px);
+}
+
+/* ?-------------------about-sec text end---------------- */
+
+/* ?-------------------about-sec cards start---------------- */
+
+.about-cards{
+    /* border: 2px solid red; */
+    margin: 4% 0% 0% 2%;
+    width: 50%;
+    height: 80%;
+    position: relative;
+}
+
+.about-cards .card{
+    /* border: 1px solid green; */
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 15px .3px gray;
+    width: 45%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.about-cards .card i{
+    /* border: 1px solid #e84545; */
+    background-color:#e845450D;
+    color: #e84545;
+    border-radius: 50%;
+    width: 30%;
+    height: 37%;
+    font-size: 200%;
+    text-align: center;
+    padding: 10%;
+    transition: all .2s;
+}
+
+.about-cards .card:hover i{
+    background-color:#e84545;
+    color: white;
+}
+
+.about-cards .card h3{
+    font-size: 25px;
+    color: #3a3d41;
+    margin: 10px 0;
+}
+
+.about-cards .card p{
+    color: #3a3d41;
+}
+
+
+.about-cards .card1{
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+
+.about-cards .card2{
+    position: absolute;
+    top: 0;
+    right: 3%;
+}
+
+
+.about-cards .card3 {
+    position: absolute;
+    top: 60%;
+    left: 3%;
+}
+
+.about-cards .card4 {
+    position: absolute;
+    top: 55%;
+    right: 3%;
+}
+
+/* ?-------------------about-sec cards ends---------------- */
+
+/* -------------------about-sec ends---------------- */
+
+/* --------------status-img starts----------------- */
+.status {
+    /* border: 2px solid blue; */
+    width: 100%;
+    height: 400px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.658),rgba(0, 0, 0, 0.658)), url("https://bootstrapmade.com/demo/templates/Append/assets/img/stats-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* --------------status-img ends----------------- */
+
+/* --------------services starts----------------- */
+
+.service-sec{
+    /* border: 2px solid blue; */
+    background-color: rgb(250, 250, 250);
+    width: 100%;
+    height: 700px;
+}
+
+.head-sec{
+    /* border: 2px solid green ; */
+    width: 60%;
+    height: 15%;
+    margin: 3% auto;
+    text-align: center;
+}
+
+.head-sec h2{
+    font-size: 38px;
+    color: #32353A;
+}
+
+.head-sec h2::before{
+    content: "";
+    width: 50px;
+    height: 2.5px;
+    background-color: #e84545;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.head-sec h2::after{
+    content: " ";
+    width: 50px;
+    height: 2.5px;
+    background-color: #e84545;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.head-sec p{
+    color: #232528;
+    margin-top: 10px;
+}
+
+.service-body{
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 550px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.service-body .service-card .service-logo::before{
+    content: "";
+    display: inline-block;
+    background-color: rgb(197, 119, 119);
+    width: 30%;
+    height: 4%;
+    position: relative;
+    top: -128%;
+    right: 20%;
+}
+
+.service-body .service-card{
+    /* border: 1px solid red; */
+    border-top: 1px solid #b3b2b2;
+    width: 45%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-body .service-card:hover .service-text h3{
+    color: #e84545;
+}
+
+.service-body .service-card .service-logo{
+    /* border: 1px solid red; */
+    display: inline-block;
+    width: 15%;
+    height: 60%;
+    font-size: 50px;
+    color: gray;
+    padding-top: 3%;
+    margin-left: 3%;
+    position: relative;
+}
+
+.service-body .service-card .service-logo i{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+.service-body .service-card .service-logo::after{
+    content: "";
+    display: inline-block;
+    /* border: 1px solid salmon; */
+    background-color: rgba(250, 128, 114, 0.308);
+    border-radius: 50%;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 45px;
+    right: 20px;
+}
+
+.service-body .service-text{
+    /* border: 2px solid red; */
+    width: 80%;
+    height: 60%;
+}
+
+.service-body .service-text h3{
+    color: #3d3d3e;
+    font-size: 20px;
+    font-weight: 650;
+    margin-bottom: 10px;
+    transition: color .3s;
+}
+
+.service-body .service-text p{
+    color: #2b2b2b;
+}
+
+/* --------------services ends----------------- */
+
+ /* ------------- features starts-------------- */
+
+ .features{
+    /* border: 1px solid blue; */
+    width: 100%;
+    height: 700px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+ }
+
+.features .about-sec{
+    /* border: 2px solid red; */
+    width: 90%;
+    height: 60%;
+    margin: 0 auto;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.features .about-sec .about-text{
+    /* border: 1px solid green; */
+    margin: 10% 0% 0% 0%;
+}
+
+.features .about-sec .clg-imgs{
+    /* border: 1px solid green; */
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.features .clg-imgs img{
+    border: 8px solid white;
+    width: 70%;
+    box-shadow: 1px 1px 10px 1px gray;
+}
+
+.features .clg-imgs .img1{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.features .clg-imgs .img2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.about-sec2{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-sec2 .img-sec {
+    border: 8px solid white;
+    width: 45%;
+    height: 90%;
+    box-shadow: 1px 1px 10px .5px gray;
+}
+
+.about-sec2 .img-sec  img{
+    width: 100%;
+    height: 100%;
+}
+
+.about-sec2 .text-sec{
+    /* border: 2px solid red; */
+    width: 38%;
+    height: 50%;
+}
+
+.about-sec2 .text-sec h2{
+    font-size: 28px;
+    color: #3d3d3e;
+}
+
+.about-sec2 .text-sec p{
+    font-size: 17px;
+    color: #4b4a4a;
+    margin: 15px 0;
+}
+
+.about-sec2 .text-sec ul li{
+    list-style-type: none;
+    color: #4b4a4a;
+    margin-top: 10px;
+}
+
+.about-sec2 .text-sec ul li i{
+    color: #e84545;
+}
+
+/* ---------------features ends------------------- */
+
+/* ---------------portfolio starts------------------- */
+
+.head-sec ul li{
+    display: inline;
+    margin-left: 5%;
+}
+
+.head-sec ul li a{
+    /* border: 1px solid #e84545; */
+    border-radius: 40%;
+    padding: .3% 1.5%;
+    text-decoration: none;
+    color: black;
+}
+
+.head-sec ul{
+    margin-top: 3%;
+}
+
+.port-pics{
+    /* border: 1px solid red; */
+    margin: 0px auto;
+    max-width: 85%;
+    height: 1150px;
+    display: flex;
+    gap: 20px;
+}
+
+.pics-col1{
+    /* border: 1px solid green; */
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.pics-col1 .img1{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.empty-space{
+    width: 100%;
+    height: 10%;
+}
+
+.pics-col1 .img1 img{
+    width: 100%;
+}
+
+.pics-col1 .img1 .card-text{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    /* border: 1px solid rgb(251, 27, 65); */
+    background-color: rgba(250, 250, 250, 0.858);
+    transition: all .3s .2s;
+    bottom: -50px;
+}
+
+.pics-col1 .img1:hover .card-text{
+    bottom: 0;
+}
+
+.pics-col1 .img1 .card-text .text{
+    color: gray;
+    width: 80%;
+    height: 100%;
+}
+
+.pics-col1 .img1 .card-text .text h2{
+    color: rgb(44, 43, 43);
+}
+
+.pics-col1 .img1 .card-text .icons{
+    color: gray;
+    width: 20%;
+    height: 100%;
+    font-size: 150%;
+    text-align: center;
+    padding-top: 4%;
+}
+
+@media(max-width:760px){
+    .port-pics{
+        flex-direction: column;
+    }
+}
+
+/* ---------------portfolio ends------------------- */
+
+/* ---------------pricing-card start--------------- */
+
+.pricing-card{
+    /* border: 1px solid green; */
+    margin: 0 auto;
+    width: 80%;
+    height: 780px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.pricing-card .cards{
+    box-shadow: 1px 1px 10px 1px rgba(200, 198, 198, 0.705);
+    /* border: 1px solid red; */
+    width: 33%;
+    height: 85%;
+}
+
+.pricing-card .left-card{
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+.pricing-card .right-card{
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.pricing-card .mid-card{
+    border: 3px solid #e84545;
+    box-shadow: none;
+    border-radius: 5%;
+    z-index: 999;
+    width: 40%;
+    height: 100%;
+    font-size: 130%;
+}
+
+.pricing-card .cards .card{
+    /* border: 1px solid red; */
+    padding: 15% 10%;
+    text-align: center;
+}
+
+.pricing-card .card h2{
+    color: #383737;
+    font-size: 150%;   
+    font-weight: 600;
+}
+
+.pricing-card .card .icon{
+    border: 10px solid #efa9a9;
+    outline: 8px solid rgb(248, 209, 209);
+    margin: 7% 0;
+    background-color: #e84545;
+    color: white;
+    border-radius: 50%;
+    padding: 7%;
+    font-size: 200%;
+}
+
+
+.pricing-card .card p{
+    color: #e84545;
+    font-weight: 600;
+    font-size: 45px;
+}
+
+.pricing-card .card p sup{
+    font-size: 60%;
+    font-weight: 1000;
+}
+
+.pricing-card .card p sub{
+    color: gray;
+    font-size: 50%;
+    font-weight: 500;
+}
+
+.pricing-card .card ul{
+    margin: 5% 0;
+}
+
+.pricing-card .card ul li{
+    color: rgb(91, 89, 89);
+    text-align: left;
+    margin-left: 8%;
+    list-style-type: none;
+    margin-top: 7%;
+}
+
+/* ---------------pricing-card end--------------- */
+
+/* ------------- questions start--------------------- */
+
+.question-sec{
+    /* border: 1px solid green; */
+    margin: 5% auto;
+    max-width: 80%;
+    height: 400px;
+    display: flex;
+    gap: 5rem;
+}
+
+.q-left{
+    /* border: 1px solid red; */
+    width: 28%;
+    height: 40%;
+}
+
+.q-left h3{
+    color: #2b2b2b;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.q-left p{
+    color: #727272;
+}
+
+.q-right{
+    /* border: 1px solid red; */
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.q-right .question{
+    /* border: 1px solid red; */
+    box-shadow: 1px 1px 10px 2px rgba(222, 218, 218, 0.537);
+    width: 100%;
+    height: 15%;
+    padding: 2%;
+}
+
+.q-right .question h3{
+    color: #3a3d41;
+    transition: all .3s;
+}
+
+.q-right .question h3:hover{
+    color: #e84545;
+}
+
+.q-right .question p{
+    opacity: 0;
+}
+/* !-------------doubt ------------- */
+
+/* ------------- questions ends--------------------- */
+
+
+/* ------------- team-sec start--------------------- */
+
+.team-sec{
+    background-color: #ecebeb;
+}
+
+.team-profile{
+    /* border: 1px solid red; */
+    width: 85%;
+    height: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.team-profile .team-card{
+    /* border: 1px solid green; */
+    width: 32%;
+    height: 48%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.team-profile .team-card .team-img {
+    /* border: 1px solid green; */
+    width: 100%;
+    height: 65%;
+    position: relative;
+    
+}
+
+.team-profile .team-card .team-img .team-trans{
+    border: 5px solid white;
+    width: 60%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(15, 14, 14, 0.566);
+    position: absolute;
+    top: 0;
+    right: 20%;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.team-profile .team-card:hover .team-trans{
+    opacity: 1;
+}
+
+
+.team-profile .team-card .team-img .team-trans i{
+    /* display: inline; */
+    color: white;
+    padding: 45% 0;
+    font-size: 1.5rem;
+    margin-left: 3.5%;
+    transition: all .3s;
+}
+
+.team-profile .team-card .team-img .team-trans i:hover{
+    color: #e84545;
+}
+
+
+.team-profile .team-card .team-img img{
+    border: 5px solid white;
+    box-shadow: 1px 0px 10px 1px rgb(202, 201, 201);
+    border-radius: 50%;
+    width: 60%;
+    height: 100%;
+}
+
+.team-profile .team-card h3{
+    color: #232528f1;
+    font-size: 20px;
+}
+
+.team-profile .team-card h4{
+    color: #727272;
+    font-weight: normal;
+    font-size: 16px;
+    font-style: italic;
+}
+
+.team-profile .team-card p{
+    font-size: 14px;
+    color: #32353A;
+}
+
+
+/* ------------- team-sec end--------------------- */
+
+/* ------------- call to action start--------------------- */
+
+.call-to-action{
+    /* border: 1px solid transparent; */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.55),rgba(0, 0, 0, 0.55)) ,url("https://bootstrapmade.com/demo/templates/Append/assets/img/cta-bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+
+.call-to-action .call-sec{
+    /* border: 1px solid green; */
+    color: white;
+    width: 60%;
+    height: 60%;
+    padding: 5% 0;
+    margin: 0% auto;
+}
+
+.call-to-action .call-sec p{
+    margin: 1% auto;
+}
+
+.call-to-action .call-sec a{
+    text-decoration: none;
+    font-size: 18px;
+
+}
+
+.button1{
+    margin-top: 15px;
+    display: inline-block;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 8px 25px;
+    color: white;
+    transition: all .3s;
+    
+}
+
+.button1:hover{
+    border: 2px solid rgb(232, 69, 69);
+    background-color: rgb(232, 69, 69);
+}
+
+/* ------------- call to action ends--------------------- */
+
+/* ------------testimonial starts-------------- */
+
+.testimonial{
+    background-color: rgb(236, 235, 235);
+    width: 100%;
+    height: 500px;
+    padding: 5% 0;
+}
+
+.testimonial .test-sec{
+    border: 1px solid red;
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.test-sec .q-left{
+    width: 40%;
+    margin-top: 5%;
+}
+
+.test-sec .q-left p{
+    margin-top: 2%;
+    color: #232528;
+    font-size: 1.05rem;
+}
+
+.test-img{
+    border: 1px solid red;
+    width: 55%;
+    height: 100%;
+    margin-left: 3%;
+    
+}
+
+/* ------------testimonial ends-------------- */
+
+/* ------------recent posts starts-------------- */
+
+.recent-posts{
+    /* border: 1px solid greenyellow; */
+    width: 100%;
+    height: 650px;
+}
+
+.recent-post-sec{
+    /* border: 1px solid green; */
+    width: 85%;
+    height: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-post-sec .recent-post-card{
+    /* border: 1px solid green; */
+    box-shadow: 0px 1px 10px 1px rgba(204, 203, 203, 0.459);
+    border-radius: 5%;
+    width: 32%;
+    height: 100%;
+}
+
+.recent-post-sec .recent-post-card .card-img{
+    
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+.recent-post-sec .recent-post-card img{
+    width: 100%;
+}
+
+.recent-post-sec .recent-post-card .card-text{
+    /* border: 1px solid red; */
+    margin: 5% 8%;
+}
+
+.recent-post-sec .recent-post-card p{
+    margin-bottom: 2%;
+    color: #4b4a4a;
+}
+
+.recent-post-sec .recent-post-card a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #39393a;
+    font-weight: 700;
+}
+
+.recent-post-sec .card-text .profile{
+    margin-top: 5%;
+    width: 100%;
+    height: 30%;
+    display: flex;
+}
+
+.recent-post-sec .card-text .profile img{
+    border-radius: 50%;
+    width: 17%;
+    height: 100%;
+}
+
+.recent-post-sec .card-text .profile-details{
+    margin-left: 3%;
+    width: 80%;
+    height: 100%;
+}
+
+.recent-post-sec .card-text .profile-details h5{
+    margin-top: 1.5%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.recent-post-sec .card-text .profile-details p{
+    margin-top: 3%;
+    font-size: .95rem;
+    font-weight: 400;
+}
