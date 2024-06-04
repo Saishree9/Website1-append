@@ -593,12 +593,13 @@ body, html{
 }
 
 .pics-col1 .img1{
+    /* border: 2px solid red; */
     position: relative;
     overflow: hidden;
-
+    transition: all .3s;
 }
 
-.empty-space{
+.empty-space{   
     width: 100%;
     height: 10%;
 }
@@ -615,6 +616,7 @@ body, html{
     background-color: rgba(250, 250, 250, 0.858);
     transition: all .3s .2s;
     bottom: -50px;
+    /* transition: all .3s; */
 }
 
 .pics-col1 .img1:hover .card-text{
@@ -1070,4 +1072,66 @@ body, html{
     margin-top: 3%;
     font-size: .95rem;
     font-weight: 400;
+}
+
+#contact{
+    background-image: linear-gradient(to right, black , darkgrey);
+    padding: 3%;
+}
+.main-footer{  
+    width: 98%; 
+    margin: 0 auto; 
+    height: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    
+}
+
+.footsec1, .footsec2{
+    padding: 1%;
+    color: white;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.foot-icons{
+    display: flex;
+    gap: 3%;
+}
+.foot-icon{
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 1.3% 2%;
+}
+
+.footsec2{
+    width: 50%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.footsec2 ul li{
+    margin-top: 8%;
+    list-style-type: none;
+}
+.footsec1 ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.footsec2 div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.declar{
+    background-color: rgba(211, 211, 211, 0.497);
+    width: 95%;
+    padding: 2%;
+    text-align: center;
+    margin: 0 auto;
 }
