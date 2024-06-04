@@ -1,6 +1,3 @@
 # Website1-append
 
-
-footer remaining.
-
-internal pages to be done.
+Done with the project 04/06/2024 (Front End only)
